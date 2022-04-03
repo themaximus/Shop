@@ -2,8 +2,9 @@ import React from 'react'
 
 let state = [
     
-      {  name: 'Kyev', shop: 'Abobas' },
-      {  name: 'Kiev', shop: 'Abybas' }
+      {  name: 'Киев', shop: '', id: '1' },
+      {  name: 'Днепр', shop: '', id: '2'},
+      {  name: 'Харьков', shop: '', id: '3'}
     
 
 ]
