@@ -1,6 +1,26 @@
 
 .dw {
     font-size: large;
-    color: rgb(0, 255, 8);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    
+    display: flex;
+    justify-content:center;
+   
+
+}
+
+.dww {
+    width: 150px;
+    height: 28px;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    border: none;
+    outline: none;
+}
+
+.dwww {
+    position: relative;
+    border: 2px solid;
 
 }
