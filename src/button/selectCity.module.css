@@ -1,7 +1,7 @@
 
 .dw {
     font-size: large;
-    color: rgb(255, 255, 255);
+    color: rgb(252, 252, 252);
     width: 100%;
     
     display: flex;
@@ -17,10 +17,41 @@
     border-color: #fff transparent transparent transparent;
     border: none;
     outline: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .dwww {
-    position: relative;
-    border: 2px solid;
+    
+    color: rgb(252, 252, 252);
+    margin: 10px;
+}
 
+Option {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.continue {
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.continue:hover {
+    background-color: rgba(255, 255, 255, 0.474);
+    transition: all 0.5s ease-out;
+    color: #fff;
+}
+
+.dwwww {
+    color: white;
 }
