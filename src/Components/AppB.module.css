@@ -1,0 +1,26 @@
+.AppB {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(44, 41, 41);
+}
+
+.shopblock {
+    width: 40%;
+    height: 100vh;
+    background-color: blueviolet;
+    float: left;
+}
+
+.zakazblock {
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(0, 255, 238);
+    float: left;
+}
+
+.adminblock {
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(30, 255, 0);
+    float: left;
+}

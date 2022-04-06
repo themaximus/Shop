@@ -9,12 +9,11 @@ const Landing = (props) => {
 
 
 
-
   
     return (
-      <div >
-        <div  className={v.dw} >PIJAMA SHOP</div>
-        <div className={v.dwww}>Выберите город:</div>
+      <div className={v.conu}>
+        
+       
        
 
   <div onClick={props.goToShop} className={v.continue}>
