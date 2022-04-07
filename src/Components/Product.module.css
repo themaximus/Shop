@@ -1,0 +1,33 @@
+
+.gg {
+    
+    background-color: aquamarine;
+    display: inline-block;
+    display: flex;
+   
+}
+
+
+.Product {
+    
+    background-color: bisque;
+    display: inline-block;
+   
+}
+
+img {
+    width: 300px;
+    display: inline-block;
+   
+}
+
+.img {
+    float: left;   
+}
+
+
+
+.nameProduct {
+    
+   display: inline-block;
+}
