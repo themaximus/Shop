@@ -1,16 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AppB from './Components/AppB';
+import Suka from './Components/Router';
+import { createBrowserHistory } from "history";
+import { BrowserRouter, Route,  Routes, Router } from "react-router-dom";
 
+const customHistory = createBrowserHistory();
+
+
+let Rerender = () => {
 ReactDOM.render(
+  
   <React.StrictMode>
-    <AppB />
+    
+    <Suka boba={boba} history={customHistory}  />
   </React.StrictMode>,
   document.getElementById('root')
+ 
 );
+
+}
+
+let boba = () => {
+  console.log('1');
+  Rerender();
+} 
+
+Rerender();
+
+
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

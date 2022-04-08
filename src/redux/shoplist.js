@@ -1,9 +1,9 @@
 let shops = [
     
-     {  name: 'Киев', shop: '', id: '1' }, 
-      {  name: 'Днепр', shop: '', id: '2'},
-      {  name: 'Харьков', shop: '', id: '3'},
-      {  name:'Котельва', shop:'', id:'4' }
+     {  name: 'Киев', url: 'JopaKiev', id: '1' }, 
+      {  name: 'Днепр', url: 'JopaDnepr', id: '2'},
+      {  name: 'Харьков', url: 'JopaHarkov', id: '3'},
+      {  name:'Котельва', url:'JopaKotelva', id:'4' }
      
       
     

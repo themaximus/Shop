@@ -1,6 +1,5 @@
 import v from './selectCity.module.css';
 import React from 'react';
-import state from '../redux/shoplist';
 
 
 

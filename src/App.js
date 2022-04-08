@@ -4,16 +4,21 @@ import Landing from './button/selectCity';
 import shops from './redux/shoplist';
 import v from './button/selectCity.module.css';
 
+import { useState } from 'react';
+
+
+
 
 
 
 class App extends React.Component {
 
 
+
   state = {
     display: false,
     name: '',
-    shop: ''
+    url: ''
   };
 
    Сlicсk = () => {
@@ -21,14 +26,19 @@ class App extends React.Component {
     this.setState({display: !display})
 }
 
-getTitle = shops => {
+ getTitle = (shops) => {
   console.log(shops);
-  const {name, shop} = shops;
-  this.setState({ name, shop, display: false});
+  const {name, url} = shops;
+  this.setState({ name, url, display: false});
 }
 
-goToShop = () => {
-  alert('ТАНЯ САМАЯ УМНАЯ И КРАСИВАЯ!');
+goToShop = (props) => {
+  const {url} = this.state;
+  console.log(url);
+  this.props.history.push(`/shop/${url}`);
+  this.props.boba();
+
+
 }
 
 

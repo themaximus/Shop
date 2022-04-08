@@ -1,7 +1,7 @@
 import c from './Product.module.css'
 
 
-function Product() {
+const Product = (props) => {
     return (
         <div className={c.gg}>
             <div className={c.Product} >
