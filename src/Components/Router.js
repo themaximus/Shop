@@ -1,8 +1,7 @@
 import React from "react";
-import { BrowserRouter,  Routes, Router } from "react-router-dom";
+import { BrowserRouter,  Routes} from "react-router-dom";
 import { Route } from 'react-router';
 import App from "../App";
-import shops from "../redux/shoplist";
 import AppB from "./AppB";
 import NotFound from "./NotFound";
 

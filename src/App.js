@@ -3,8 +3,14 @@ import './App.css';
 import Landing from './button/selectCity';
 import shops from './redux/shoplist';
 import v from './button/selectCity.module.css';
+import { createBrowserHistory } from "history";
+import { Link, Route, Routes } from 'react-router-dom';
+import AppB from './Components/AppB';
+import NotFound from './Components/NotFound';
 
-import { useState } from 'react';
+
+const customHistory = createBrowserHistory();
+
 
 
 
@@ -13,6 +19,8 @@ import { useState } from 'react';
 
 class App extends React.Component {
 
+
+  
 
 
   state = {
@@ -35,14 +43,20 @@ class App extends React.Component {
 goToShop = (props) => {
   const {url} = this.state;
   console.log(url);
-  this.props.history.push(`/shop/${url}`);
-  this.props.boba();
+  // customHistory.push(`/shop/${url}`);
 
+  // this.props.boba();
+  // customHistory.go();
 
 }
 
 
+
+
   render () {
+
+
+   
  
   return (
 
@@ -65,8 +79,9 @@ goToShop = (props) => {
   }
  </div>
 
+ 
  { this.state.name && !this.state.display ? (
-      <Landing goToShop={this.goToShop} shops={shops} />) : null }
+     <Link to= { '/shop/' +  this.state.url }> <Landing goToShop={this.goToShop} shops={shops} /> </Link>) : null }
     </div>
     
   );
